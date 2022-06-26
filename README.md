@@ -122,28 +122,35 @@ If you click on the redis-master Deployment in the Topology view, you should now
 * Create the Redis slave Deployment
 [redis-slave-deployment.yaml](https://github.com/AlanShami/IBM_Containerized-Website_Project/blob/main/Files/redis-slave-deployment.yaml)
 
-       ```
-        oc apply -f redis-slave-deployment.yaml
+     ```
+     oc apply -f redis-slave-deployment.yaml
   
-to verify:
+  to verify:
 
-    ``` 
-    oc get deployments
+
+     ``` 
+     oc get deployments
+    
+    
         
- ![](https://github.com/AlanShami/IBM_Containerized-Website_Project/blob/main/Images/deploy_redis_10.png)
+![](https://github.com/AlanShami/IBM_Containerized-Website_Project/blob/main/Images/deploy_redis_10.png)
     
 To list pods:
 
     ```
-     oc get pods
+    oc get pods
+    
+    
     
 ![](https://github.com/AlanShami/IBM_Containerized-Website_Project/blob/main/Images/deploy_redis_11.png)
 
 * Create the Redis slave Service:
 [redis-slave-service.yaml](https://github.com/AlanShami/IBM_Containerized-Website_Project/blob/main/Files/redis-slave-service.yaml)
 
-      ```
+    ```
     oc apply -f redis_slave_service.yaml
+    
+    
     
 * Set up and configure the analyzer from IBM cloud and then deploy the YAML files.
 
